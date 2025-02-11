@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./static/css/style.css">
+    <!-- HTML Meta Tags -->
+    <title>Engineering Project Status Hub | Professional Project Communication</title>
+    <meta name="description" content="">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://digitalharbor7.github.io/engineering-status-pages/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Engineering Project Status Hub | Professional Project Communication">
+    <meta property="og:description" content="">
+    <!--
+  You can generate this image URL dynamically: https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/{site_text}/{title_text}/{description_text}/{image_url}/og.png
+  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
+  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
+-->
+    <meta property="og:image"
+        content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/digitalharbor7.github.io/Engineering%20Project%20Status%20Hub%20%7C%20Professional%20Project%20Communication/If%20you%E2%80%99re%20an%20online%20store%20owner%2C%20you%20should%20be%20using%20Meta%20Ads%20campaigns.%20Here%20is%20a%20three-tiered%20campaign%20strategy%20that%20will%20boost%20your%20online%20e-commerce%20sales./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F7c914b3a-b83a-4bc2-97c6-41426701e02e.jpg%3Ftoken%3DloGFaqpwQE8bL8Xz9PbJkm2n15fcmN-uydqs25V75EM%26height%3D800%26width%3D1200%26expires%3D33275286582/og.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="digitalharbor7.github.io">
+    <meta property="twitter:url" content="https://digitalharbor7.github.io/engineering-status-pages/">
+    <meta name="twitter:title" content="Engineering Project Status Hub | Professional Project Communication">
+    <meta name="twitter:description" content="">
+    <!--
+  You can generate this image URL dynamically: https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/{site_text}/{title_text}/{description_text}/{image_url}/og.png
+  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
+  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
+-->
+    <meta name="twitter:image"
+        content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/digitalharbor7.github.io/Engineering%20Project%20Status%20Hub%20%7C%20Professional%20Project%20Communication/If%20you%E2%80%99re%20an%20online%20store%20owner%2C%20you%20should%20be%20using%20Meta%20Ads%20campaigns.%20Here%20is%20a%20three-tiered%20campaign%20strategy%20that%20will%20boost%20your%20online%20e-commerce%20sales./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F7c914b3a-b83a-4bc2-97c6-41426701e02e.jpg%3Ftoken%3DloGFaqpwQE8bL8Xz9PbJkm2n15fcmN-uydqs25V75EM%26height%3D800%26width%3D1200%26expires%3D33275286582/og.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     <script src="./static/js/base-url.js"></script>
     <style>
         :root {
@@ -33,7 +66,7 @@
             position: fixed;
             width: 100%;
             z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .container {
@@ -43,8 +76,8 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&h=1080&fit=crop') center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&h=1080&fit=crop') center/cover;
             padding: 180px 0 100px;
             color: white;
             text-align: center;
@@ -63,7 +96,7 @@
             font-weight: 700;
             margin-bottom: 1.5rem;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .hero p {
@@ -71,7 +104,7 @@
             max-width: 800px;
             margin: 0 auto 2rem;
             color: white;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         .cta-button {
@@ -99,9 +132,10 @@
 
         .section-dark {
             background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-                        var(--dark-bg);
+                var(--dark-bg);
             color: white;
         }
+
         .section-dark .section-title {
             background: rgba(0, 0, 0, 0.6);
             padding: 2rem;
@@ -113,15 +147,17 @@
         .section-dark .container {
             text-align: center;
         }
+
         .section-dark .section-title h2 {
             color: white;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
             margin-bottom: 1rem;
         }
+
         .section-dark .section-title p {
             color: white;
             font-size: 1.2rem;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
             margin: 0;
         }
 
@@ -147,7 +183,7 @@
             background: white;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
 
@@ -202,10 +238,11 @@
             padding: 2rem;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -213,7 +250,8 @@
                 <div style="font-size: 1.5rem; font-weight: 700;">Project Status Hub</div>
                 <div>
                     <a href="#features" style="color: white; text-decoration: none; margin-left: 2rem;">Features</a>
-                    <a href="#projects" style="color: white; text-decoration: none; margin-left: 2rem;">Example Projects</a>
+                    <a href="#projects" style="color: white; text-decoration: none; margin-left: 2rem;">Example
+                        Projects</a>
                     <a href="./contact.html" style="color: white; text-decoration: none; margin-left: 2rem;">Contact</a>
                 </div>
             </nav>
@@ -225,7 +263,8 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Project Status Pages for Engineering Firms</h1>
-                <p>I build clean, reliable project status pages that keep your stakeholders informed and your team focused on the work.</p>
+                <p>I build clean, reliable project status pages that keep your stakeholders informed and your team
+                    focused on the work.</p>
                 <a href="./contact.html" class="cta-button">Get Started Today</a>
             </div>
         </div>
@@ -240,7 +279,8 @@
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <i class="fas fa-clipboard-list fa-3x" style="color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <i class="fas fa-clipboard-list fa-3x"
+                        style="color: var(--primary-color); margin-bottom: 1rem;"></i>
                     <h3>Progress Tracking</h3>
                     <p>Clear milestones and updates that matter to your stakeholders</p>
                 </div>
@@ -268,22 +308,26 @@
             <div class="project-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1590092794015-bce5431c83f4?w=800&h=500&fit=crop" alt="Downtown Public Library">
+                        <img src="https://images.unsplash.com/photo-1590092794015-bce5431c83f4?w=800&h=500&fit=crop"
+                            alt="Downtown Public Library">
                     </div>
                     <div class="project-content">
                         <h3>Downtown Public Library</h3>
                         <p>Urban Engineering</p>
-                        <a href="./firms/urban-engineering/public-library/status.html" class="cta-button" style="margin-top: 1rem;">View Status</a>
+                        <a href="./firms/urban-engineering/public-library/status.html" class="cta-button"
+                            style="margin-top: 1rem;">View Status</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1518730518541-d0843268c287?w=800&h=500&fit=crop" alt="Beach Restoration Project">
+                        <img src="https://images.unsplash.com/photo-1518730518541-d0843268c287?w=800&h=500&fit=crop"
+                            alt="Beach Restoration Project">
                     </div>
                     <div class="project-content">
                         <h3>Beach Restoration Project</h3>
                         <p>Coastal Engineering</p>
-                        <a href="./firms/coastal-engineering/beach-restoration/status.html" class="cta-button" style="margin-top: 1rem;">View Status</a>
+                        <a href="./firms/coastal-engineering/beach-restoration/status.html" class="cta-button"
+                            style="margin-top: 1rem;">View Status</a>
                     </div>
                 </div>
             </div>
@@ -298,7 +342,8 @@
                 <p>Need a reliable project status page? Let's talk about your needs.</p>
             </div>
             <div class="contact-info" style="max-width: 600px; margin: 0 auto; text-align: center;">
-                <div style="background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <div
+                    style="background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                     <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 2rem;">Let's Talk</h3>
                     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
                         <div>
@@ -307,7 +352,8 @@
                             <p>(555) 123-4567</p>
                         </div>
                         <div>
-                            <i class="fas fa-envelope fa-2x" style="color: var(--primary-color); margin-bottom: 1rem;"></i>
+                            <i class="fas fa-envelope fa-2x"
+                                style="color: var(--primary-color); margin-bottom: 1rem;"></i>
                             <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Email</h4>
                             <p>info@projectstatushub.com</p>
                         </div>
@@ -326,4 +372,5 @@
         </div>
     </footer>
 </body>
+
 </html>
