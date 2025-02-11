@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{FIRM_NAME} - Project Status Dashboard</title>
+    <link rel="stylesheet" href="assets/css/firm-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Firm-specific custom styles will be injected here -->
+    <style>
+        :root {
+            --primary-color: {PRIMARY_COLOR};
+            --secondary-color: {SECONDARY_COLOR};
+            --accent-color: {ACCENT_COLOR};
+        }
+    </style>
+</head>
+<body>
+    <header class="firm-header">
+        <div class="container">
+            <img src="assets/images/logo.png" alt="{FIRM_NAME} Logo" class="logo">
+            <h1>{FIRM_NAME}</h1>
+            <p>{FIRM_TAGLINE}</p>
+        </div>
+    </header>
+
+    <div class="nav-wrapper">
+        <nav class="container">
+            <ul>
+                <li><a href="#active-projects">Active Projects</a></li>
+                <li><a href="#completed-projects">Completed Projects</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <a href="{FIRM_WEBSITE}" target="_blank" class="nav-button">Visit Main Website</a>
+        </nav>
+    </div>
+
+    <main class="container">
+        <section id="active-projects">
+            <h2>Active Projects</h2>
+            <div class="projects-grid">
+                <!-- Project cards will be dynamically generated here -->
+                <article class="project-card">
+                    <img src="assets/images/project1.jpg" alt="Project Name" class="project-image">
+                    <div class="project-content">
+                        <span class="status-badge status-active">In Progress</span>
+                        <h3>{PROJECT_NAME}</h3>
+                        <p>{PROJECT_DESCRIPTION}</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: {PROGRESS}%"></div>
+                        </div>
+                        <p class="progress-text">{PROGRESS}% Complete</p>
+                        <a href="projects/{PROJECT_SLUG}.html">View Details →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="completed-projects">
+            <h2>Completed Projects</h2>
+            <div class="projects-grid">
+                <!-- Completed project cards will be dynamically generated here -->
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Our Projects</h2>
+            <p>{FIRM_DESCRIPTION}</p>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>For questions about our projects, please contact:</p>
+                <p>{CONTACT_INFO}</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 {FIRM_NAME}. Project status page powered by <a href="https://mydigitalharbor.com">Digital Harbor</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --light-bg: #f8f9fa;
+  --spacing-unit: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: calc(var(--spacing-unit) * 2) 0;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: var(--spacing-unit) 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-unit);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero {
+  background-color: var(--light-bg);
+  padding: calc(var(--spacing-unit) * 4) 0;
+  text-align: center;
+}
+
+.firms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(var(--spacing-unit) * 2);
+  padding: calc(var(--spacing-unit) * 2) 0;
+}
+
+.firm-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-unit);
+  transition: transform 0.3s;
+}
+
+.firm-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-status {
+  display: flex;
+  align-items: center;
+  margin: var(--spacing-unit) 0;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-active { background-color: #2ecc71; }
+.status-planning { background-color: #f1c40f; }
+.status-completed { background-color: #95a5a6; }
+
+.progress-bar {
+  background-color: var(--light-bg);
+  border-radius: 4px;
+  height: 8px;
+  margin: var(--spacing-unit) 0;
+}
+
+.progress-bar-fill {
+  background-color: var(--secondary-color);
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: calc(var(--spacing-unit) * 2) 0;
+  margin-top: calc(var(--spacing-unit) * 4);
+}
