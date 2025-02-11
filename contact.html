@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Project Status Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        :root {
+            --primary-color: #1B4965;
+            --secondary-color: #5FA8D3;
+            --accent-color: #CAE9FF;
+            --text-color: #2C3E50;
+            --light-bg: #F5F9FC;
+            --dark-bg: #1B4965;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .page-content {
+            padding-top: 100px;
+            min-height: calc(100vh - 200px);
+        }
+
+        .contact-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .process-steps {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .step {
+            margin-bottom: 2rem;
+            padding-left: 3rem;
+            position: relative;
+        }
+
+        .step:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2rem;
+            height: 2rem;
+            background: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .step:after {
+            content: "";
+            position: absolute;
+            left: 1rem;
+            top: 2rem;
+            bottom: -2rem;
+            width: 2px;
+            background: var(--accent-color);
+        }
+
+        .step:last-child:after {
+            display: none;
+        }
+
+        .step h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .benefits {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: var(--light-bg);
+            border-radius: 4px;
+        }
+
+        .benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .benefits li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .benefits li:before {
+            content: "✓";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="/" style="font-size: 1.5rem; font-weight: 700; color: white; text-decoration: none;">Project Status Hub</a>
+                <div>
+                    <a href="/#features" style="color: white; text-decoration: none; margin-left: 2rem;">Features</a>
+                    <a href="/#projects" style="color: white; text-decoration: none; margin-left: 2rem;">Example Projects</a>
+                    <a href="/contact.html" style="color: white; text-decoration: none; margin-left: 2rem;">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="contact-section">
+                <h1 style="color: var(--primary-color); margin-bottom: 1rem;">Let's Work Together</h1>
+                <p style="font-size: 1.2rem; color: var(--text-color);">I provide straightforward project status pages that keep your stakeholders informed and your team focused.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Get in Touch</h2>
+                        <div style="margin-bottom: 1.5rem;">
+                            <i class="fas fa-phone" style="color: var(--secondary-color); margin-right: 0.5rem;"></i>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 0.5rem;"></i>
+                            <span>info@projectstatushub.com</span>
+                        </div>
+                    </div>
+                    <div class="benefits">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">What You Get</h3>
+                        <ul>
+                            <li>Responsive, professional service</li>
+                            <li>Quick turnaround on updates</li>
+                            <li>Development environment for previews</li>
+                            <li>Flexible update formats</li>
+                            <li>Iterative improvements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-steps">
+                    <h2 style="color: var(--primary-color); margin-bottom: 2rem;">How It Works</h2>
+                    
+                    <div class="step">
+                        <h3>1. Initial Setup</h3>
+                        <p>We'll discuss your needs and set up your project status page with your branding and preferred structure.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>2. Updates Your Way</h3>
+                        <p>Send updates in whatever format works best for you - email, spreadsheet, document, or structured data. I'll handle the rest.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>3. Preview and Refine</h3>
+                        <p>Review changes in a private development environment before they go live. Request adjustments until everything is exactly right.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>4. Continuous Improvement</h3>
+                        <p>As your needs evolve, I'll work with you to refine and enhance your status pages, ensuring they remain valuable to all stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="section-dark" style="padding: 2rem 0;">
+        <div class="container">
+            <div style="text-align: center;">
+                <p style="margin: 0;">Contact me at (555) 123-4567 or info@projectstatushub.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

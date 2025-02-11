@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Beach Restoration: Project Progress | Coastal Engineering</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">Coastal Engineering</div>
+            <nav>
+                <a href="/firms/not-configured.html">Visit Coastal Engineering Website</a>
+                <a href="/firms/coastal-engineering/projects.html">View All Projects</a>
+                <a href="/">Project Hub Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Project Header -->
+        <h1>Sunset Beach Restoration: Project Progress</h1>
+        
+        <div class="project-overview">
+            <p>Coastal Engineering is leading a comprehensive environmental restoration project at Sunset Beach, focusing on protecting and enhancing the natural ecosystem while improving public access. This project represents our commitment to sustainable coastal development and environmental stewardship.</p>
+            
+            <div class="project-stats">
+                <div class="stat-item">
+                    <div class="stat-value">40%</div>
+                    <div class="stat-label">Project Complete</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">2.5</div>
+                    <div class="stat-label">Miles of Coastline</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">Dec 2025</div>
+                    <div class="stat-label">Expected Completion</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest Update -->
+        <div class="update">
+            <div class="update-date">February 10, 2025</div>
+            <h2 class="update-title">Sand Replenishment Phase Shows Positive Results</h2>
+            
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1600&h=900&fit=crop" 
+                     alt="Beach restoration in progress"
+                     class="project-image">
+                <p class="image-caption">Sand replenishment operations using hydraulic dredging equipment (February 2025)</p>
+            </div>
+            
+            <p>The Sunset Beach Restoration project continues to make significant progress in its sand replenishment phase. Our careful approach to environmental preservation is yielding positive results, with marine life monitoring confirming minimal ecosystem disruption.</p>
+            
+            <h3>Progress Highlights</h3>
+            <ul>
+                <li>Successfully completed 40% of planned sand replenishment volume</li>
+                <li>Marine life monitoring shows positive adaptation to restoration work</li>
+                <li>Dune protection measures installed along northern beach section</li>
+                <li>Environmental impact assessment confirms minimal wildlife disruption</li>
+            </ul>
+        </div>
+
+        <!-- Previous Updates -->
+        <div class="update">
+            <div class="update-date">January 28, 2025</div>
+            <h2 class="update-title">Dune Protection System Implementation</h2>
+            
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1517824806704-9040b037703b?w=1600&h=900&fit=crop" 
+                     alt="Dune protection system"
+                     class="project-image">
+                <p class="image-caption">New dune protection system with native vegetation installation</p>
+            </div>
+            
+            <p>A significant milestone has been achieved with the completion of dune protection measures along the northern section of Sunset Beach. This system will help prevent erosion and protect the restored beach area. Our team is now preparing for the next phase, which includes planting native vegetation to further stabilize the dunes.</p>
+        </div>
+
+        <div class="update">
+            <div class="update-date">January 15, 2025</div>
+            <h2 class="update-title">Environmental Assessment Results</h2>
+            
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=1600&h=900&fit=crop" 
+                     alt="Environmental monitoring"
+                     class="project-image">
+                <p class="image-caption">Environmental scientists conducting wildlife impact assessment</p>
+            </div>
+            
+            <p>The comprehensive environmental impact assessment has been completed, confirming that our restoration methods are achieving their intended goals while maintaining minimal impact on local wildlife. This validation allows us to proceed confidently with our restoration timeline.</p>
+            
+            <h3>Key Features of the Project</h3>
+            <ul>
+                <li>2.5 miles of coastline restoration</li>
+                <li>Native dune vegetation integration</li>
+                <li>Advanced erosion control systems</li>
+                <li>Enhanced public access points</li>
+                <li>Wildlife habitat preservation</li>
+                <li>Modern stormwater management</li>
+                <li>Educational outreach elements</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Coastal Engineering. For more information about this project, contact our office at (555) 234-5678.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll animation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Reveal animations on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.update, .image-container').forEach((el) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.5s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

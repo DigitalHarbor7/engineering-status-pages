@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{PROJECT_NAME}: Project Progress | {FIRM_NAME}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- Navigation -->
+    <header class="bg-gray-100 border-b border-gray-200">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center">
+                <a href="/" class="text-blue-800 hover:text-blue-600 font-semibold">{FIRM_NAME}</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Project Header -->
+        <h1 class="text-4xl font-bold text-gray-900 mb-6">{PROJECT_NAME}: Project Progress</h1>
+        
+        <p class="text-xl text-gray-700 mb-12">{PROJECT_DESCRIPTION}</p>
+
+        <!-- Latest Update -->
+        <section class="mb-16">
+            <div class="prose max-w-none">
+                <h2 class="text-2xl font-bold mb-2">{LATEST_UPDATE_DATE}</h2>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">{LATEST_UPDATE_TITLE}</h3>
+                
+                <p class="text-gray-700 mb-6">{LATEST_UPDATE_DESCRIPTION}</p>
+                
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    {LATEST_UPDATE_DETAILS}
+                </ul>
+
+                <h4 class="font-semibold mb-2">Progress Highlights</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    {PROGRESS_HIGHLIGHTS}
+                </ul>
+            </div>
+        </section>
+
+        <!-- Previous Updates -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6">Previous Updates</h2>
+            
+            <div class="space-y-8">
+                <!-- Previous Update Template (Copy for each update) -->
+                <article class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-semibold mb-2">{UPDATE_DATE}</h3>
+                    <h4 class="text-lg font-medium text-gray-800 mb-4">{UPDATE_TITLE}</h4>
+                    <p class="text-gray-700">{UPDATE_DESCRIPTION}</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="bg-gray-50 p-8 rounded-lg mb-16">
+            <h2 class="text-2xl font-bold mb-6">Project Overview</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Key Features</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        {KEY_FEATURES_LIST}
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Project Timeline</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Construction Start: {START_DATE}</li>
+                        <li>• Current Phase: {CURRENT_PHASE}</li>
+                        <li>• Expected Completion: {END_DATE}</li>
+                        <li>• Overall Progress: {PROGRESS_PERCENTAGE}%</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <p class="text-center text-gray-600">
+                © 2025 {FIRM_NAME}. For more information about this project, contact our office at {CONTACT_PHONE}.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

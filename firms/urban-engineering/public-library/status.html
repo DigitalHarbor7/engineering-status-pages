@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downtown Public Library: Project Progress | Urban Engineering</title>
+    <link rel="stylesheet" href="/static/css/urban-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">Urban Engineering</div>
+            <nav>
+                <a href="/firms/not-configured.html">Visit Urban Engineering Website</a>
+                <a href="/firms/urban-engineering/projects.html">View All Projects</a>
+                <a href="/">Project Hub Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Project Header -->
+            <div class="project-header">
+                <h1>Downtown Public Library</h1>
+                <p>After extensive planning and community input, construction on the new Downtown Public Library began in March 2024 and is anticipated to be completed in August 2025. This state-of-the-art facility will serve as a cornerstone of our community's educational and cultural landscape.</p>
+            </div>
+
+            <!-- Project Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">50k</div>
+                    <div class="stat-label">Square Feet</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">Aug</div>
+                    <div class="stat-label">Target Completion</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">Gold</div>
+                    <div class="stat-label">LEED Target</div>
+                </div>
+            </div>
+
+            <!-- Milestone Section -->
+            <div class="progress-section">
+                <h2>Recent Milestones</h2>
+                <div class="milestone-list">
+                    <div class="milestone-item">
+                        <div class="milestone-date">Feb 2025</div>
+                        <div class="milestone-content">
+                            <h3>Interior Construction</h3>
+                            <p>Interior wall structures completed and passed inspection</p>
+                        </div>
+                    </div>
+                    <div class="milestone-item">
+                        <div class="milestone-date">Jan 2025</div>
+                        <div class="milestone-content">
+                            <h3>HVAC Systems</h3>
+                            <p>HVAC installation and initial testing completed</p>
+                        </div>
+                    </div>
+                    <div class="milestone-item">
+                        <div class="milestone-date">Jan 2025</div>
+                        <div class="milestone-content">
+                            <h3>Building Envelope</h3>
+                            <p>Roof installation completed, building fully weatherproof</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest Images -->
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&h=900&fit=crop" 
+                         alt="Interior construction progress">
+                    <div class="image-overlay">
+                        <p>Interior wall construction completed (February 2025)</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&h=900&fit=crop" 
+                         alt="HVAC system installation">
+                    <div class="image-overlay">
+                        <p>HVAC system installation completed ahead of schedule</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">February 8, 2025</div>
+                        <h3>Interior Construction Milestone</h3>
+                        <p>All interior walls completed and passed inspection. Preparing for electrical and plumbing installation.</p>
+                        <ul>
+                            <li>Interior wall structures completed</li>
+                            <li>Electrical and plumbing prep started</li>
+                            <li>Building fully weatherproof</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 25, 2025</div>
+                        <h3>HVAC System Complete</h3>
+                        <p>HVAC system installation finished ahead of schedule, featuring energy recovery ventilation and smart climate controls.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 10, 2025</div>
+                        <h3>Building Envelope Secured</h3>
+                        <p>Roof installation completed, making the building fully weatherproof and ready for accelerated interior work.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div class="updates-section">
+                <h2>Project Features</h2>
+                <div class="update-card">
+                    <h3>Building Specifications</h3>
+                    <ul>
+                        <li>50,000 square foot facility</li>
+                        <li>LEED Gold certification target</li>
+                        <li>Renewable energy systems</li>
+                        <li>State-of-the-art digital media center</li>
+                    </ul>
+                </div>
+                <div class="update-card">
+                    <h3>Community Spaces</h3>
+                    <ul>
+                        <li>Flexible meeting areas</li>
+                        <li>Children's learning center</li>
+                        <li>Outdoor reading garden</li>
+                        <li>Digital collaboration zones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Urban Engineering. For more information about this project, contact our office at (555) 123-4567.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Animate elements on scroll
+        document.querySelectorAll('.timeline-item, .stat-card, .image-card, .update-card').forEach((el) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.5s ease-out';
+            observer.observe(el);
+        });
+
+        // Progress bar animation
+        document.querySelectorAll('.progress-fill').forEach(bar => {
+            bar.style.width = '0';
+            observer.observe(bar.parentElement);
+        });
+    </script>
+</body>
+</html>

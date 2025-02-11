@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Project Status Hub | Professional Project Communication</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        :root {
+            --primary-color: #1B4965;
+            --secondary-color: #5FA8D3;
+            --accent-color: #CAE9FF;
+            --text-color: #2C3E50;
+            --light-bg: #F5F9FC;
+            --dark-bg: #1B4965;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&h=1080&fit=crop') center/cover;
+            padding: 180px 0 100px;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #4A8EBF;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-light {
+            background: var(--light-bg);
+        }
+
+        .section-dark {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                        var(--dark-bg);
+            color: white;
+        }
+        .section-dark .section-title {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 8px;
+            width: fit-content;
+            margin: 0 auto 3rem;
+        }
+
+        .section-dark .container {
+            text-align: center;
+        }
+        .section-dark .section-title h2 {
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            margin-bottom: 1rem;
+        }
+        .section-dark .section-title p {
+            color: white;
+            font-size: 1.2rem;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+            margin: 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            color: var(--text-color);
+            background: white;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .project-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-content p {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="font-size: 1.5rem; font-weight: 700;">Project Status Hub</div>
+                <div>
+                    <a href="#features" style="color: white; text-decoration: none; margin-left: 2rem;">Features</a>
+                    <a href="#projects" style="color: white; text-decoration: none; margin-left: 2rem;">Example Projects</a>
+                    <a href="/contact.html" style="color: white; text-decoration: none; margin-left: 2rem;">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Project Status Pages for Engineering Firms</h1>
+                <p>I build clean, reliable project status pages that keep your stakeholders informed and your team focused on the work.</p>
+                <a href="/contact.html" class="cta-button">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Simple Project Communication</h2>
+                <p>Clear, reliable project status pages for engineering firms</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-clipboard-list fa-3x" style="color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Progress Tracking</h3>
+                    <p>Clear milestones and updates that matter to your stakeholders</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users fa-3x" style="color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Stakeholder Updates</h3>
+                    <p>Keep everyone on the same page with regular updates</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-alt fa-3x" style="color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Documentation</h3>
+                    <p>One reliable source for project status information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example Projects Section -->
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>Example Projects</h2>
+                <p>See how I help engineering firms communicate project status</p>
+            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1590092794015-bce5431c83f4?w=800&h=500&fit=crop" alt="Downtown Public Library">
+                    </div>
+                    <div class="project-content">
+                        <h3>Downtown Public Library</h3>
+                        <p>Urban Engineering</p>
+                        <a href="/firms/urban-engineering/public-library/status.html" class="cta-button" style="margin-top: 1rem;">View Status</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1518730518541-d0843268c287?w=800&h=500&fit=crop" alt="Beach Restoration Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Beach Restoration Project</h3>
+                        <p>Coastal Engineering</p>
+                        <a href="/firms/coastal-engineering/beach-restoration/status.html" class="cta-button" style="margin-top: 1rem;">View Status</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get in Touch</h2>
+                <p>Need a reliable project status page? Let's talk about your needs.</p>
+            </div>
+            <div class="contact-info" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <div style="background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 2rem;">Let's Talk</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                        <div>
+                            <i class="fas fa-phone fa-2x" style="color: var(--primary-color); margin-bottom: 1rem;"></i>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope fa-2x" style="color: var(--primary-color); margin-bottom: 1rem;"></i>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Email</h4>
+                            <p>info@projectstatushub.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-dark" style="padding: 2rem 0;">
+        <div class="container">
+            <div style="text-align: center;">
+                <p style="margin: 0;">Contact me at (555) 123-4567 or info@projectstatushub.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
