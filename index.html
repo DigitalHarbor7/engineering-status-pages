@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,354 +7,434 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./static/css/style.css">
-    <!-- HTML Meta Tags -->
-    <title>Engineering Project Status Hub | Professional Project Communication</title>
-    <meta name="description" content="Professional engineering project status pages with dedicated developer support. Quick 24-hour updates and custom solutions for your project communication needs.">
-
-    <!-- Facebook Meta Tags -->
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Professional engineering project status pages with dedicated developer support. Custom solutions for your project communication needs.">
     <meta property="og:url" content="https://digitalharbor7.github.io/engineering-status-pages/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Engineering Project Status Hub | Professional Project Communication">
-    <meta property="og:description" content="Professional engineering project status pages with dedicated developer support. Quick 24-hour updates and custom solutions for your project communication needs.">
-    <!--
-  You can generate this image URL dynamically: https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/{site_text}/{title_text}/{description_text}/{image_url}/og.png
-  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
-  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
--->
-    <meta property="og:image"
-        content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/digitalharbor7.github.io/Engineering%20Project%20Status%20Hub%20%7C%20Professional%20Project%20Communication/If%20you%E2%80%99re%20an%20online%20store%20owner%2C%20you%20should%20be%20using%20Meta%20Ads%20campaigns.%20Here%20is%20a%20three-tiered%20campaign%20strategy%20that%20will%20boost%20your%20online%20e-commerce%20sales./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F7c914b3a-b83a-4bc2-97c6-41426701e02e.jpg%3Ftoken%3DloGFaqpwQE8bL8Xz9PbJkm2n15fcmN-uydqs25V75EM%26height%3D800%26width%3D1200%26expires%3D33275286582/og.png">
-
+    <meta property="og:description" content="Professional engineering project status pages with dedicated developer support. Custom solutions for your project communication needs.">
+    <meta property="og:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/digitalharbor7.github.io/Engineering%20Project%20Status%20Hub%20%7C%20Professional%20Project%20Communication/If%20you%E2%80%99re%20an%20online%20store%20owner%2C%20you%20should%20be%20using%20Meta%20Ads%20campaigns.%20Here%20is%20a%20three-tiered%20campaign%20strategy%20that%20will%20boost%20your%20online%20e-commerce%20sales./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F7c914b3a-b83a-4bc2-97c6-41426701e02e.jpg%3Ftoken%3DloGFaqpwQE8bL8Xz9PbJkm2n15fcmN-uydqs25V75EM%26height%3D800%26width%3D1200%26expires%3D33275286582/og.png">
+    
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="digitalharbor7.github.io">
     <meta property="twitter:url" content="https://digitalharbor7.github.io/engineering-status-pages/">
     <meta name="twitter:title" content="Engineering Project Status Hub | Professional Project Communication">
-    <meta name="twitter:description" content="Professional engineering project status pages with dedicated developer support. Quick 24-hour updates and custom solutions for your project communication needs.">
-    <!--
-  You can generate this image URL dynamically: https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/{site_text}/{title_text}/{description_text}/{image_url}/og.png
-  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
-  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
--->
-    <meta name="twitter:image"
-        content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/digitalharbor7.github.io/Engineering%20Project%20Status%20Hub%20%7C%20Professional%20Project%20Communication/If%20you%E2%80%99re%20an%20online%20store%20owner%2C%20you%20should%20be%20using%20Meta%20Ads%20campaigns.%20Here%20is%20a%20three-tiered%20campaign%20strategy%20that%20will%20boost%20your%20online%20e-commerce%20sales./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F7c914b3a-b83a-4bc2-97c6-41426701e02e.jpg%3Ftoken%3DloGFaqpwQE8bL8Xz9PbJkm2n15fcmN-uydqs25V75EM%26height%3D800%26width%3D1200%26expires%3D33275286582/og.png">
-
-    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <meta name="twitter:description" content="Professional engineering project status pages with dedicated developer support. Custom solutions for your project communication needs.">
+    <meta name="twitter:image" content="https://ogcdn.net/2c2c6737-47d4-4459-9969-e711eb48394c/v1/digitalharbor7.github.io/Engineering%20Project%20Status%20Hub%20%7C%20Professional%20Project%20Communication/If%20you%E2%80%99re%20an%20online%20store%20owner%2C%20you%20should%20be%20using%20Meta%20Ads%20campaigns.%20Here%20is%20a%20three-tiered%20campaign%20strategy%20that%20will%20boost%20your%20online%20e-commerce%20sales./https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F7c914b3a-b83a-4bc2-97c6-41426701e02e.jpg%3Ftoken%3DloGFaqpwQE8bL8Xz9PbJkm2n15fcmN-uydqs25V75EM%26height%3D800%26width%3D1200%26expires%3D33275286582/og.png">
+    
     <script src="./static/js/base-url.js"></script>
     <style>
-        :root {
-            --primary-color: #1B4965;
-            --secondary-color: #5FA8D3;
-            --accent-color: #CAE9FF;
-            --text-color: #2C3E50;
-            --light-bg: #F5F9FC;
-            --dark-bg: #1B4965;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        .header {
-            background: var(--primary-color);
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&h=1080&fit=crop') center/cover;
-            padding: 180px 0 100px;
-            color: white;
-            text-align: center;
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 51, 102, 0.95), rgba(0, 77, 153, 0.85)),
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop') center/cover;
+            padding: 200px 0 180px;
+            margin-top: -80px;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="rgba(255,255,255,0.05)"/></svg>');
+            opacity: 0.3;
         }
 
         .hero-content {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 2rem;
-            border-radius: 8px;
-            display: inline-block;
+            position: relative;
+            max-width: 900px;
             margin: 0 auto;
+            text-align: center;
+            color: white;
+            z-index: 1;
         }
 
         .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
+            font-size: 4rem;
             margin-bottom: 1.5rem;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: fadeInUp 1s ease-out;
         }
 
         .hero p {
-            font-size: 1.25rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            color: white;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
         }
 
         .cta-button {
             display: inline-block;
-            background: var(--secondary-color);
+            background: var(--accent-color);
             color: white;
-            padding: 1rem 2rem;
-            border-radius: 4px;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 500;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.2);
+            animation: fadeInUp 1s ease-out 0.4s backwards;
         }
 
         .cta-button:hover {
-            background: #4A8EBF;
+            background: #ff8533;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 0, 0.3);
         }
 
-        .section {
-            padding: 5rem 0;
+        .features-section {
+            position: relative;
+            padding: 120px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            margin-top: -80px;
         }
 
-        .section-light {
-            background: var(--light-bg);
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
         }
 
-        .section-dark {
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-                var(--dark-bg);
-            color: white;
+        .feature-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .section-dark .section-title {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 2rem;
-            border-radius: 8px;
-            width: fit-content;
-            margin: 0 auto 3rem;
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--accent-color);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
         }
 
-        .section-dark .container {
-            text-align: center;
+        .feature-card:hover {
+            transform: translateY(-10px);
         }
 
-        .section-dark .section-title h2 {
-            color: white;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-            margin-bottom: 1rem;
+        .feature-card:hover::before {
+            transform: scaleX(1);
         }
 
-        .section-dark .section-title p {
-            color: white;
-            font-size: 1.2rem;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-            margin: 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-title h2 {
+        .feature-card i {
             font-size: 2.5rem;
-            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover i {
+            transform: scale(1.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
             margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .projects-section {
+            position: relative;
+            padding: 120px 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            color: white;
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
         }
 
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 4rem;
         }
 
         .project-card {
-            background: white;
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px) rotate(1deg);
         }
 
         .project-image {
-            height: 200px;
+            height: 300px;
+            position: relative;
             overflow: hidden;
+        }
+
+        .project-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 100%);
         }
 
         .project-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
         }
 
         .project-content {
-            padding: 1.5rem;
-            color: var(--text-color);
-            background: white;
-            border-radius: 0 0 8px 8px;
+            padding: 2.5rem;
+            position: relative;
         }
 
         .project-content h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: white;
         }
 
         .project-content p {
-            color: var(--text-color);
-            margin-bottom: 1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
         }
 
-        .project-content h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--primary-color);
+        .contact-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            position: relative;
+            margin-top: -80px;
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .feature-card {
+        .contact-info {
+            max-width: 700px;
+            margin: 0 auto;
             text-align: center;
-            padding: 2rem;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            padding: 4rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid var(--accent-color);
+            border-radius: 15px;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 1rem auto 0;
+        }
+
+        .projects-section .section-title h2 {
+            color: white;
+        }
+
+        .projects-section .section-title p {
+            color: rgba(255,255,255,0.9);
         }
     </style>
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="container">
             <nav style="display: flex; justify-content: space-between; align-items: center;">
-                <div style="font-size: 1.5rem; font-weight: 700;">Project Status Hub</div>
+                <a href="/" class="logo">Project Status Hub</a>
                 <div>
-                    <a href="#features" style="color: white; text-decoration: none; margin-left: 2rem;">Features</a>
-                    <a href="#projects" style="color: white; text-decoration: none; margin-left: 2rem;">Example
-                        Projects</a>
-                    <a href="./contact.html" style="color: white; text-decoration: none; margin-left: 2rem;">Contact</a>
+                    <a href="#features">Features</a>
+                    <a href="#projects">Example Projects</a>
+                    <a href="./contact.html">Contact</a>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Project Status Pages</h1>
-                <p>Professional status pages that keep your community in the loop. Simple, transparent communication about the projects that matter.</p>
-                <a href="./contact.html" class="cta-button">Get Started Today</a>
+                <h1>Professional Project Status Pages</h1>
+                <p>Elevate your project communication with elegant, transparent updates that keep stakeholders informed and engaged.</p>
+                <a href="./contact.html" class="cta-button">Transform Your Project Updates</a>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="section section-light">
+    <section id="features" class="features-section">
         <div class="container">
             <div class="section-title">
-                <h2>Personal Developer Service</h2>
-                <p>Dedicated support for your project communication needs</p>
+                <h2>Dedicated Developer Support</h2>
+                <p>Experience personalized service tailored to your project's unique communication needs</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <i class="fas fa-clock fa-3x"
-                        style="color: var(--primary-color); margin-bottom: 1rem;"></i>
-                    <h3>Quick Response Time</h3>
-                    <p>Updates posted within 24 hours or 1 business day</p>
+                    <i class="fas fa-clock"></i>
+                    <h3>Flexible Response Time</h3>
+                    <p>Standard updates within 3 business days, with customizable timelines based on your project's needs and priorities.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-code fa-3x" style="color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <i class="fas fa-code"></i>
                     <h3>Custom Solutions</h3>
-                    <p>Flexible static site solutions tailored to your project needs</p>
+                    <p>Tailored static site solutions designed to match your project's specific requirements and reinforce your brand identity.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-user-tie fa-3x" style="color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <i class="fas fa-user-tie"></i>
                     <h3>Direct Communication</h3>
-                    <p>Work directly with a dedicated developer for your updates</p>
+                    <p>Work one-on-one with a dedicated developer who understands your project's unique challenges and goals.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Example Projects Section -->
-    <section id="projects" class="section section-dark">
+    <section id="projects" class="projects-section">
         <div class="container">
             <div class="section-title">
-                <h2>See It In Action</h2>
-                <p>Example projects and status pages</p>
+                <h2>Featured Projects</h2>
+                <p>Discover how we help organizations maintain clear and effective project communication</p>
             </div>
             <div class="project-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1590092794015-bce5431c83f4?w=800&h=500&fit=crop"
-                            alt="Downtown Public Library">
+                        <img src="https://images.unsplash.com/photo-1590092794015-bce5431c83f4?w=800&h=500&fit=crop" alt="Downtown Public Library">
                     </div>
                     <div class="project-content">
-                        <h3>Downtown Library</h3>
-                        <p>Keeping library patrons updated during 18-month renovation</p>
-                        <a href="./firms/urban-engineering/public-library/status.html" class="cta-button"
-                            style="margin-top: 1rem;">View Status</a>
+                        <h3>Downtown Library Renovation</h3>
+                        <p>Keeping library patrons informed during an 18-month renovation project with weekly updates and milestone tracking.</p>
+                        <a href="./firms/urban-engineering/public-library/status.html" class="cta-button">View Status Page</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1518730518541-d0843268c287?w=800&h=500&fit=crop"
-                            alt="Beach Restoration Project">
+                        <img src="https://images.unsplash.com/photo-1518730518541-d0843268c287?w=800&h=500&fit=crop" alt="Beach Restoration Project">
                     </div>
                     <div class="project-content">
-                        <h3>Beach Project</h3>
-                        <p>Weekly updates on shoreline improvements and access changes</p>
-                        <a href="./firms/coastal-engineering/beach-restoration/status.html" class="cta-button"
-                            style="margin-top: 1rem;">View Status</a>
+                        <h3>Coastal Restoration</h3>
+                        <p>Providing weekly updates on shoreline improvements and access changes for this environmental initiative.</p>
+                        <a href="./firms/coastal-engineering/beach-restoration/status.html" class="cta-button">View Status Page</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section-light">
+    <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-title">
-                <h2>Ready to Start?</h2>
-                <p>Let's set up your project status page</p>
+                <h2>Ready to Get Started?</h2>
+                <p>Let's create your professional project status page</p>
             </div>
-            <div class="contact-info" style="max-width: 600px; margin: 0 auto; text-align: center;">
-                <div style="background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <a href="mailto:nic@mydigitalharbor.com" class="cta-button" style="font-size: 1.2rem;">Get in Touch</a>
-                </div>
+            <div class="contact-info">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--primary-color);">Transform Your Project Communication</h3>
+                <p style="margin-bottom: 2rem; color: #666; font-size: 1.1rem;">Take the first step towards better stakeholder engagement</p>
+                <a href="mailto:nic@mydigitalharbor.com" class="cta-button">Contact Me Today</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="section-dark" style="padding: 2rem 0; background-color: #1e4d6b;">
+    <footer>
         <div class="container">
-            <div style="text-align: center;">
-                <p style="margin: 0; color: #ffffff; font-size: 1.1rem; letter-spacing: 0.02em;">Contact me at <a href="mailto:nic@mydigitalharbor.com" style="color: #ffffff; text-decoration: none; border-bottom: 1px dotted #ffffff; padding-bottom: 2px;">nic@mydigitalharbor.com</a></p>
-            </div>
+            <p>Contact: <a href="mailto:nic@mydigitalharbor.com" style="color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3);">nic@mydigitalharbor.com</a></p>
         </div>
     </footer>
 </body>
-
 </html>
